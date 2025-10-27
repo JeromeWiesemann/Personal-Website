@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Jerome Wiesemann</title>
+  <meta name="description" content="Personal website of Jerome Wiesemann — PhD in Quantum Information at IQC.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="assets/favicon.png" type="image/png">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#home">Jerome Wiesemann</a>
+      <nav class="nav">
+        <a href="#home">Home</a>
+        <a href="#research">Publications</a>
+        <a href="#cv">CV</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="hero container">
+      <div class="hero-profile">
+        <div class="hero-photo">
+          <img src="profile_picture.png" alt="Portrait of Jerome Wiesemann">
+        </div>
+        <div class="hero-text">
+          <h1 class="hero-title">Jerome Wiesemann</h1>
+          <p class="hero-role">PhD in Quantum Information</p>
+          <ul class="hero-affiliations">
+            <li>University of Waterloo</li>
+            <li>Institute for Quantum Computing</li>
+          </ul>
+          <p class="hero-location">
+            <img src="assets/location-pin.svg" alt="" aria-hidden="true">
+            <span>Waterloo, Canada</span>
+          </p>
+          <div class="hero-links">
+            <a class="hero-icon-link" href="mailto:jwiesemann@uwaterloo.ca" aria-label="Email">
+              <span>@</span>
+            </a>
+            <a class="hero-icon-link" href="http://linkedin.com/in/jerome-wiesemann-9461812a1" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <span>in</span>
+            </a>
+            <a class="hero-icon-link" href="https://github.com/JeromeWiesemann" target="_blank" rel="noopener" aria-label="GitHub">
+              <span>{ }</span>
+            </a>
+            <a class="hero-icon-link" href="https://scholar.google.com/citations?user=hkari8kAAAAJ&hl=en" target="_blank" rel="noopener" aria-label="Google Scholar">
+              <span>G</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="hero-about">
+        <h2>About</h2>
+        <p>I am a PhD student in <strong>quantum information theory</strong> at the <strong>Institute for Quantum Computing</strong>, University of Waterloo, supervised by Prof. Norbert Lütkenhaus.</p>
+        <p>My research focuses on security analyses for <strong>quantum communication</strong> and the implementation of <strong>quantum repeaters</strong> using photonic <strong>quantum error correction</strong>. I aim to develop rigorous models and tools that bridge the gap between theory and experimental feasibility.</p>
+        <p>I completed my B.Sc. and M.Sc. in Physics at the <strong>Technical University of Berlin</strong> and conducted an internship at <strong>ID Quantique</strong> in Geneva before starting my PhD.</p>
+        <p>Outside of research, I enjoy graphics programming and exploring the intersection between physics, computation, and design.</p>
+        <div class="hero-cta">
+          <a class="button primary" href="mailto:jwiesemann@uwaterloo.ca">Email me</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="research" class="section container">
+      <h2>Publications</h2>
+      <p class="lede">Selected papers. An overview can be found on <a href="https://scholar.google.com/citations?user=hkari8kAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>.</p>
+      <div class="pub-accordion">
+        <details class="publication" open>
+          <summary>
+            <div>
+              <p class="pub-meta"><span class="pub-authors"><span class="pub-me">J. Wiesemann</span> · F. Grünenfelder · A. Blázquez Coído · N. Walenta · D. Rusca</span><span class="pub-year">2025</span></p>
+              <h3 class="pub-title">Evaluation of quantum key distribution systems against injection-locking attacks</h3>
+              <p class="pub-type">APL Photonics</p>
+            </div>
+          </summary>
+          <div class="pub-body">
+            <p><strong>Abstract:</strong> While ideal quantum key distribution (QKD) systems are well-understood, practical implementations face various vulnerabilities, such as side-channel attacks resulting from device imperfections. Current security proofs for decoy-state BB84 protocols either assume uniform phase randomization of Alice's signals, which is compromised by practical limitations and attacks like injection locking, or rely on a (partially) characterized phase distribution. This work presents an experimental method to characterize the phase de-randomization from injection locking using a heterodyne detection setup, providing a lower bound on the degree of isolation required to protect QKD transmitters against injection-locking attacks. The methods presented are source-agnostic and can be used to evaluate general QKD systems against injection-locking attacks.</p>
+          </div>
+        </details>
+
+        <details class="publication">
+          <summary>
+            <div>
+              <p class="pub-meta"><span class="pub-authors"><span class="pub-me">J. Wiesemann</span> · J. Krause · D. Tupkary · N. Lütkenhaus · D. Rusca · N. Walenta </span><span class="pub-year">2024</span></p>
+              <h3 class="pub-title">A consolidated and accessible security proof for finite-size decoy-state quantum key distribution</h3>
+              <p class="pub-type">Preprint · arXiv:2405.16578</p>
+            </div>
+          </summary>
+          <div class="pub-body">
+            <p><strong>Abstract:</strong> In recent years, quantum key distribution (QKD) has evolved from a scientific research field to a commercially available security solution, supported by mathematically formulated security proofs. However, since the knowledge required for a full understanding of a security proof is scattered across numerous publications, it has proven difficult to gain a comprehensive understanding of all steps involved in the process and their limitations without considerable effort and attention to detail. Our paper aims to address this issue by providing a rigorous and comprehensive security proof for the finite-size 1-decoy and 2-decoy BB84 protocols against coherent attacks within Renner's entropic uncertainty relation framework. We resolve important technical flaws found in previous works regarding the fixed-length treatment of protocols and the careful handling of acceptance testing. To this end, we provide various technical arguments, including an analysis accounting for the important distinction of the 1-decoy protocol where statistics are computed after error correction, along with a slight improvement of the secure-key length. We also explicitly clarify the aspect of conditioning on events, addressing a technical detail often overlooked and essential for rigorous proofs. We extensively consolidate and unify concepts from many works, thoroughly discussing the underlying assumptions and resolving technical inconsistencies. Therefore, our contribution represents a significant advancement towards a broader and deeper understanding of QKD security proofs.</p>
+          </div>
+        </details>
+      </div>
+    </section>
+
+    <section id="cv" class="section container">
+      <h2>CV</h2>
+      <a class="button" href="assets/CV.pdf" target="_blank" rel="noopener">Open CV</a>
+      <p><em>Last updated October 2025.</em></p>
+    </section>
+
+    <section id="contact" class="section container">
+      <h2>Contact</h2>
+      <div class="contact-grid">
+        <div>
+          <h3>Email</h3>
+          <a href="mailto:jwiesemann@uwaterloo.ca">jwiesemann@uwaterloo.ca</a>
+        </div>
+        <div>
+          <h3>LinkedIn</h3>
+          <a href="http://linkedin.com/in/jerome-wiesemann-9461812a1">linkedin.com/in/jerome-wiesemann-9461812a1</a>
+        </div>
+        <div> 
+          <h3>GitHub</h3>
+          <a href="https://github.com/JeromeWiesemann">github.com/JeromeWiesemann</a>
+        </div>
+        <div>
+          <h3>Google Scholar</h3>
+          <a href="https://scholar.google.com/citations?user=hkari8kAAAAJ&hl=en">scholar.google.com/citations?user=hkari8kAAAAJ&hl=en</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Jerome Wiesemann. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
