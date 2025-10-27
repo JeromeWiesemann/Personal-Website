@@ -235,3 +235,8 @@ body{
   .nav a{ margin-left: 12px; }
   .hero{ padding-top: 56px; }
 }
+
+@media (max-width: 520px){
+  /* Give text some breathing room on narrow phone screens */
+  .container{ padding-left: 28px; padding-right: 28px; }
+}
